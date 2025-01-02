@@ -1,3 +1,5 @@
 print("For" + " da" + " Love" + " of" + " da" + " game")
 
-print("Hello " + input("Add a number here: ") + "!")
+name = input("Add a number here: ")
+
+print(len(name))
