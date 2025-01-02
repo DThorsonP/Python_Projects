@@ -1,2 +1,3 @@
 # Python_Projects
-Python projects to add to CV
+
+Playground to create a few worthwhile Python programs that can be shown to the public
