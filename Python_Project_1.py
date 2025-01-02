@@ -1,2 +1,3 @@
 print("For" + " da" + " Love" + " of" + " da" + " game")
-input("Add a number here: ")
+
+print("Hello " + input("Add a number here: ") + "!")
