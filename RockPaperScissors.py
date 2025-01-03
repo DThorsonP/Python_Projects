@@ -2,12 +2,10 @@ import random
 
 options = ["rock", "paper", "scissors"]
 
-user_choice = input("What do you choose? rock, paper or roscissors.\n")
-
+user_choice = input("What do you choose? rock, paper or scissors\n")
 computer_choice = random.choice(options)
 
 print("You chose: ", user_choice)
-
 print("Computer chose: ", computer_choice)
 
 if user_choice == computer_choice:
