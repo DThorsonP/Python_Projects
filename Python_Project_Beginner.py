@@ -1,11 +1,13 @@
-print("For" + " da" + " Love" + " of" + " da" + " game")
+print("Welcome to the tip calculator!")
 
-name = input("Add a number here: ")
+bill = float(input("What was the total bill? "))
+tip = int(input("How much tip would you like to give? 10, 12, 15 "))
+split = int(input("How many people to split the bill? "))
 
-# This will print the total number of characters in the name variable
-print(len(name))
+tippercent = tip / 100
+totaltip = bill * tippercent
+total_bill = bill + totaltip
+bill_per_person = total_bill / split
+final_amount = round(bill_per_person, 2)
 
-username = "David"
-length = len(username)
-
-print(length)
+print(f"Each person should pay: ${final_amount} ")
