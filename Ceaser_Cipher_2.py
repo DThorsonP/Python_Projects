@@ -1,9 +1,5 @@
 alphabet = list(map(chr, range(97, 123)))
 
-# direction = input("Type (encode) to encrpyt type (decode) to decrypt:\n")
-# text = input("Type your  message:\n").lower()
-# shift = int(input("Type the amount of shift:\n"))
-
 def caesar(original_text, shift_amount, encode_or_decode):
     output_text = ""
     if encode_or_decode == "decode":
@@ -24,13 +20,13 @@ should_continue = True
 
 while should_continue:
     direction = input("Type (encode) to encrpyt type (decode) to decrypt:\n")
-    text = input("Type your  message:\n").lower()
+    text = input("Type your message:\n").lower()
     shift = int(input("Type the amount of shift:\n"))
 
     caesar(original_text=text, shift_amount=shift, encode_or_decode=direction)
 
-    restart = input("Type yes if you want to go again. Otherwise type no\n").lower()
+    restart = input("Type (yes) if you want to go again. Otherwise type (no)\n").lower()
     if restart == "no":
         should_continue = False
-        print("Goodbye")
+        print("Thanks for playing")
     
