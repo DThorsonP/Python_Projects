@@ -1,9 +1,12 @@
 from turtle import Turtle, Screen
 
-paddle_a = Turtle()
-paddle_a.shape("square")
-paddle_a.color("white")
-paddle_a.shapesize(5, 1)
-paddle_a.goto(275, 0)
-
+class Paddle(Turtle):
+    def __init__(self, position):
+        super().__init__()
+        self.shape("square")
+        self.color("white")
+        self.shapesize(5, 1)
+        self.penup()
+        self.goto(position)
+        
 
