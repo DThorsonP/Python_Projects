@@ -13,6 +13,7 @@ screen.tracer(0)
 
 snake = Snake()
 food = Food()
+scoreboard = Scoreboard()
 
 screen.listen()
 screen.onkey(snake.up, "Up")
@@ -26,8 +27,10 @@ while game_is_on:
     time.sleep(0.1)
     snake.move()
 
-    if snake.head.distance(food) < 12:
+    if snake.head.distance(food) < 8:
         food.refresh()
+        snake.extend()
+        scoreboard.increase_score()
 
 
 screen.exitonclick()
