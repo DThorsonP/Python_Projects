@@ -1,3 +1,5 @@
+#!/Users/david.thorson/.local/pipx/venvs/pandas
+
 # import csv
 
 # with open("weather_data.csv") as data_file:
@@ -10,4 +12,3 @@
 #     print(temperatures)
 
 import pandas as pd
-pd.test()
