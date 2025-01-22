@@ -1,4 +1,4 @@
-#!/Users/david.thorson/.local/pipx/venvs/pandas
+#! /Users/david.thorson/.local/pipx/venvs/pandas/bin/python
 
 # import csv
 
