@@ -37,3 +37,8 @@ passed_students = {
 print(passed_students)
 # Output == {'Alex': 81, 'Beth': 28, 'Caroline': 49, 'Dave': 58, 'Elanor': 18, 'Freddie': 69}
 # Output == {'Alex': 81, 'Freddie': 69}
+
+sentence = "What is the Airspeed Velocity of an Unladen Swallow?"
+result = {words: words.__len__() for words in sentence.split()}
+print(result)
+# Output == {'What': 4, 'is': 2, 'the': 3, 'Airspeed': 8, 'Velocity': 8, 'of': 2, 'an': 2, 'Unladen': 7, 'Swallow?': 8}
