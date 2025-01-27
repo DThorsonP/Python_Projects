@@ -1,4 +1,4 @@
-#! /Users/david.thorson/.local/pipx/venvs/pandas/bin/python
+#! /Users/david.thorson/.local/pipx/venvs/pandas/bin
 
 import csv
 import pandas as pd
