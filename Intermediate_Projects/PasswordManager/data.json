@@ -1,0 +1,30 @@
+{
+    "https://newyorktimes.com": {
+        "email": "davidthorson@email.com",
+        "password": "m`]YX8zoA98t0M8HEqngJ\\6o1xK8)b"
+    },
+    "https://google.com": {
+        "email": "davidthorson@email.com",
+        "password": "IkSL#z(4Sy3FL[l/F7Oe*n2Qskx3("
+    },
+    "https://amazon.com": {
+        "email": "davidthorson@email.com",
+        "password": "Lwfs3AVCb+&4/)U4y!GT30fBX#aW"
+    },
+    "https://aws.com": {
+        "email": "davidthorson@email.com",
+        "password": "1>3mtoI#IxD-q56u5U=z6_s!es]VXDg"
+    },
+    "https://fandango.com": {
+        "email": "davidthorson@email.com",
+        "password": "FC$d32z.l3WY(BTPc^;FmrJ<hu11>o"
+    },
+    "https://twitter.com": {
+        "email": "davidthorson@email.com",
+        "password": "cy-tgij.H-88'PJR1Okv}4iS2%KBa"
+    },
+    "https://facebook.com": {
+        "email": "davidthorson@email.com",
+        "password": "Xw$rp3'uCqu457/@7y@ta8S?TT-vN"
+    }
+}
