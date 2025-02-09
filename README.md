@@ -1,5 +1,5 @@
 # Python_Projects
-100 Days of code
+# 100 Days of code
 
 Various projects I've been working on lately to get better at programming in Python
 
