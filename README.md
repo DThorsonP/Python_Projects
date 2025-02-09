@@ -1,4 +1,6 @@
 # Python_Projects
 100 Days of code
 
-Portfolio to create a few worthwhile Python programs that can be shown to the public
+Various projects I've been working on lately to get better at programming in Python
+
+Hi I'm David,  I started in tech about 8 years ago with a lot of excitment to start something new in both my personal and professional lives.
