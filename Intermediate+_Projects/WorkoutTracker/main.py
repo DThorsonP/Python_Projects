@@ -1,16 +1,17 @@
 import requests
 from datetime import datetime
+import os
 
 GENDER = "male"
-WEIGHT_KG = 165
-HEIGHT_CM = 6
-AGE = 37
+WEIGHT_KG = 84
+HEIGHT_CM = 180
+AGE = 32
 
-APP_ID = "id"
-API_KEY = "key"
+APP_ID = os.environ["ENV_NIX_APP_ID"]
+API_KEY = os.environ["ENV_NIX_API_KEY"]
 
 exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
-sheet_endpoint = os.environ["SHEET_ENDPOINT"]
+
 
 exercise_text = input("Tell me which exercises you did: ")
 
@@ -29,17 +30,18 @@ parameters = {
 
 response = requests.post(exercise_endpoint, json=parameters, headers=headers)
 result = response.json()
+print(f"Nutritionix API call: \n {result} \n")
 
 today_date = datetime.now().strftime("%d/%m/%Y")
 now_time = datetime.now().strftime("%X")
 
-bearer_headers = {
-    "Authorization": f"Bearer {os.environ['TOKEN']}"
-}
+GOOGLE_SHEET_NAME = "workout"
+sheet_endpoint = os.environ[
+    "ENV_SHEETY_ENDPOINT"]
 
 for exercise in result["exercises"]:
     sheet_inputs = {
-        "workout": {
+        GOOGLE_SHEET_NAME: {
             "date": today_date,
             "time": now_time,
             "exercise": exercise["name"].title(),
@@ -48,7 +50,15 @@ for exercise in result["exercises"]:
         }
     }
 
-    sheet_response = requests.post(sheet_endpoint, json=sheet_inputs, headers=bearer_headers)
 
-    print(sheet_response.text)
-    
+
+bearer_headers = {
+    "Authorization": f"Bearer {os.environ['ENV_SHEETY_TOKEN']}"
+}
+sheet_response = requests.post(
+    sheet_endpoint,
+    json=sheet_inputs,
+    headers=bearer_headers
+)    
+
+print(f"Sheety Response: \n {sheet_response.text}")
